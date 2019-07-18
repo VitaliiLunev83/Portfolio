@@ -1,0 +1,65 @@
+.header {
+    background-image: url(/img/header-img.jpg);
+    background-position: 100%;
+    background-size: cover;
+    height: 757px;
+}
+
+.menu__bar {
+    color: #212121;
+    padding: 20px 0;
+}
+
+.menu__item {
+    margin-left: 30px;
+}
+
+.menu__item a {
+    font-size: 20px;
+    color: #212121;
+}
+
+.menu__item a:hover {
+    text-decoration: none;
+    color: #868686;
+}
+
+.name {
+    margin-top: 130px;
+    margin-left: 70px;
+}
+
+.social {
+    margin-left: 300px;
+}
+
+.button {
+    color: #444444;
+    transition: 0.3s;
+    background: transparent;
+    border: 2px solid #444444;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.button:hover {
+    background: #696969;
+    color: #fcfcfc;
+    border: 2px solid #696969;
+}
+
+.social__item {
+    margin-bottom: 45px;
+    margin-left: 50px;
+}
+
+.fab {
+    font-size: 30px;
+    color: #696969;
+}
+
+.fab:hover {
+    color: #868686;
+    ;
+    transition: 0.2s;
+}
