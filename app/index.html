@@ -17,8 +17,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- FontAwesomeKIt -->
     <script src="https://kit.fontawesome.com/15460dfa6f.js"></script>
-    <!-- AnimateCSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/loading-bar.css" />
     <!-- MainCSS -->
     <link rel="stylesheet" href="css/main.min.css">
 </head>
@@ -85,16 +86,16 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-right">
                     <h3>Немного о себе</h3>
                     <p>Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные тексты. Агентство использовало безопасную живет дорогу, семантика точках буквоград запятых то приставка путь пор предупредила, страна последний рекламных
                         вопрос ты там о правилами, несколько подпоясал. Ручеек первую использовало !</p>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="flip-up">
                     <h3>Фото</h3>
                     <div class="avatar"><img src="img/Avatar.jpg" alt="фото профиля"></div>
                 </div>
-                <div class="col-xl-4">
+                <div class="col-xl-4" data-aos="fade-left">
                     <h3>Персоональная информация</h3>
                     <p>Проффесиональое создание сайтов: HTML верстка, работа с CMS(Wordpress), работа с java-script.</p>
                     <p>Дата рождения: 23.01.1991г.</p>
@@ -113,29 +114,27 @@
                     <p class="about__text">Мои знания и достижения</p>
                 </div>
             </div>
-
             <div class="row justify-content-center">
                 <div class="col-xl-8">
-
                     <!-- Timeline -->
-                    <ul class="timeline">
-                        <li class="timeline-item   ml-3 p-4 shadow ">
+                    <ul class="timeline" data-aos="fade-right">
+                        <li class="timeline-item   ml-3 p-4 shadow " data-aos="fade-left">
                             <div class="timeline-arrow"></div>
                             <h2 class="h5 mb-0">Title of section 1</h2><span class="small text-gray"><i class="far fa-clock"></i> 21 March, 2019</span>
                             <p class="text-small mt-2 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                         </li>
-                        <li class="timeline-item   ml-3 p-4 shadow">
+                        <li class="timeline-item   ml-3 p-4 shadow" data-aos="fade-left">
                             <div class="timeline-arrow"></div>
                             <h2 class="h5 mb-0">Title of section 2</h2><span class="small text-gray"><i class="far fa-clock"></i> 5 April, 2019</span>
                             <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper.</p>
                             <p class="text-small mt-2 font-weight-light">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam! Deleniti.</p>
                         </li>
-                        <li class="timeline-item  rounded ml-3 p-4 shadow">
+                        <li class="timeline-item  rounded ml-3 p-4 shadow" data-aos="fade-left">
                             <div class="timeline-arrow"></div>
                             <h2 class="h5 mb-0">Title of section 3</h2><span class="small text-gray"><i class="far fa-clock"></i> 18 August, 2019</span>
                             <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
                         </li>
-                        <li class="timeline-item  rounded ml-3 p-4 shadow">
+                        <li class="timeline-item  rounded ml-3 p-4 shadow" data-aos="fade-left">
                             <div class="timeline-arrow"></div>
                             <h2 class="h5 mb-0">Title of section 4</h2><span class="small text-gray"><i class="far fa-clock"></i> 10 October, 2019</span>
                             <p class="text-small mt-2 font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
@@ -145,20 +144,26 @@
                         </li>
                     </ul>
                     <!-- End -->
-
                 </div>
             </div>
         </div>
+        </div>
+    </section>
 
-
-
+    <section class="skills resume">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 resumetitle">
+                    <h2 class="about__title">Навыки</h2>
+                    <p class="about__text">Технологии с котороыми работаю</p>
+                </div>
+            </div>
+            <div class="row">
+                <div data-type="bubble" data-path="M10 10L90 10L90 90L10 90Z" class="ldBar" data-fill="data:ldbar/res,bubble(#248,#000,50,1)"><i class="far fa-clock"></i></div>
+            </div>
 
 
         </div>
-
-
-
-
 
     </section>
 
@@ -172,9 +177,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-
-    <script src="libs/waypoints/waypoint.js"></script>
-    <script src="libs/animate/animate-css.js"></script>
+    <!-- Animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+    </script>
+    <!-- Animation End -->
+    <script type="text/javascript" src="js/loading-bar.js"></script>
 
     <script src="js/main.js"></script>
     <script src="js/scripts.min.js"></script>
