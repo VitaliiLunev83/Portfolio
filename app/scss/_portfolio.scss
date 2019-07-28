@@ -1,0 +1,48 @@
+.portfolio {
+    text-align: center;
+    padding: 120px 0px 135px;
+}
+
+.portfolio .button:hover,
+.focused {
+    background: transparent;
+    color: black;
+    border: 2px solid yellow;
+    outline: none !important;
+}
+
+.portfolio img {
+    margin-bottom: 30px;
+}
+
+.filter {
+    padding: 110px 0px;
+}
+
+div[filter]:hover img {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.text {
+    display: none;
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        color: yellow;
+        transition: 0.3s;
+    }
+}
+
+div[filter]:hover .text {
+    display: block;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: 3;
+    text-align: center;
+}

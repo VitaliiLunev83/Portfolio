@@ -5,6 +5,7 @@
 @import "_aboutme.scss";
 @import "_resume.scss";
 @import "_skills.scss";
+@import "_portfolio.scss";
 ::placeholder {
     color: #666;
 }
@@ -20,6 +21,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    outline: none !important;
+}
+
 body {
     font-size: 16px;
     min-width: 320px;
@@ -31,7 +36,7 @@ body {
     input,
     textarea {
         border: #666 1px solid;
-        outline: none;
+        outline: none !important;
         &:focus:required:invalid {
             border-color: red;
         }

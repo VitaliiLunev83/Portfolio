@@ -1,9 +1,26 @@
-$(window).scroll(function() {
-    $(' .mov').each(function() {
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow + 250) {
-            $(this).addClass('bounceInUp');
+$(document).ready(function() {
+    $('.button[filter]').click(function() {
+        if ($(this).attr('val') == 'off') {
+            $('.button[filter]').attr('val', 'off').removeClass('focused');
+            $(this).attr('val', 'on').addClass('focused');
+            $('.filter > div').hide(300);
+            $('.filter > div[filter=' + $(this).attr('filter') + ']').show(300);
+            if ($(this).attr('filter') == 'all') {
+                $('.button[filter]').attr('val', 'off').removeClass('focused');
+                $(this).attr('val', 'on').addClass('focused');
+                $('.filter > div').show(300);
+            }
         }
     });
+
+    $('#some-button').magnificPopup({
+        items: {
+            src: 'img/item2.png'
+        },
+        type: 'image' // this is default type
+    });
+
+
+
+
 });
