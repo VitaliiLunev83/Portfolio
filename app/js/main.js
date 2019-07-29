@@ -3,22 +3,17 @@ $(document).ready(function() {
         if ($(this).attr('val') == 'off') {
             $('.button[filter]').attr('val', 'off').removeClass('focused');
             $(this).attr('val', 'on').addClass('focused');
-            $('.filter > div').hide(300);
-            $('.filter > div[filter=' + $(this).attr('filter') + ']').show(300);
+            $('.filter > div').hide(500);
+            $('.filter > div[filter=' + $(this).attr('filter') + ']').show(500);
             if ($(this).attr('filter') == 'all') {
                 $('.button[filter]').attr('val', 'off').removeClass('focused');
                 $(this).attr('val', 'on').addClass('focused');
-                $('.filter > div').show(300);
+                $('.filter > div').show(500);
             }
         }
     });
 
-    $('#some-button').magnificPopup({
-        items: {
-            src: 'img/item2.png'
-        },
-        type: 'image' // this is default type
-    });
+
 
 
 

@@ -34,11 +34,11 @@
                     <div class="col-xl-7">
                         <nav>
                             <ul class="menu d-flex justify-content-start">
-                                <li class="menu__item"><a href="#">Обо мне</a></li>
-                                <li class="menu__item"><a href="#">Резюме</a></li>
-                                <li class="menu__item"><a href="#">Портфолио</a></li>
-                                <li class="menu__item"><a href="#">Навыки</a></li>
-                                <li class="menu__item"><a href="#">Контакты</a></li>
+                                <li class="menu__item"><a href="#about__me">Обо мне</a></li>
+                                <li class="menu__item"><a href="#resume">Резюме</a></li>
+                                <li class="menu__item"><a href="#portfolio">Портфолио</a></li>
+                                <li class="menu__item"><a href="#skills">Навыки</a></li>
+                                <li class="menu__item"><a href="#contacts">Контакты</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -54,7 +54,26 @@
                         <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Ручеек переписывается заглавных жаренные не выйти большой даже? Собрал эта пунктуация единственное большой безорфографичный? Первую океана это
                             рот рукопись дорогу.</p>
                         <button class="button ">Скачать Резюме</button>
-                        <button class="button ">Связаться со мной</button>
+                        <button class="button " data-toggle="modal" data-target="#ModalNumber">Связаться со мной</button>
+                    </div>
+
+                    <div class="modal fade" id="ModalNumber" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"> Выберите удобный для вас тип связи:</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Телефон: +7911 031 16 59</p>
+                                    <p>Телефон: +7963 315 02 82</p>
+                                    <p>Email: vitalii.luniev@mail.ru</p>
+                                    <p>Email: vitalii.luniev@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class=" offset-4 col-xl-3">
@@ -79,9 +98,9 @@
     </section>
 
 
-    <section class="about__me">
+    <section id="about__me" class="about__me">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-xl-8 ">
                     <h2 class="about__title animated  fadeInDown">Обо Мне</h2>
                     <p class="about__text">Познакомимся Ближе</p>
@@ -108,9 +127,9 @@
         </div>
     </section>
 
-    <section class="resume">
+    <section id="resume" class="resume">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-xl-9 resumetitle">
                     <h2 class="about__title">Резюме</h2>
                     <p class="about__text">Мои знания и достижения</p>
@@ -152,9 +171,9 @@
         </div>
     </section>
 
-    <section class="skills resume">
+    <section id="skills" class="skills resume">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-xl-9 resumetitle">
                     <h2 class="about__title">Навыки</h2>
                     <p class="about__text">Технологический стек</p>
@@ -162,32 +181,32 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-xl-12">
-                    <div class="progress">
+                    <div class="progress " data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped  html progress-bar-animated" style="width:95%">HTML5</div>
                     </div>
 
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" style="width:80%">CSS3</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped js progress-bar-animated" style="width:50%">JS</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar  progress-bar-striped bootstrap progress-bar-animated" style="width:85%">Bootstrap</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped sass progress-bar-animated" style="width:80%">Sass</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped gulp progress-bar-animated" style="width:85%">Gulp</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped bg-secondary progress-bar-animated" style="width:70%">Npm</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped git progress-bar-animated" style="width:80%">Git</div>
                     </div>
-                    <div class="progress">
+                    <div class="progress" data-aos="fade-left">
                         <div class="progress-bar progress-bar-striped  progress-bar-animated" style="width:40%">БЭМ</div>
                     </div>
                 </div>
@@ -196,12 +215,12 @@
         </div>
     </section>
 
-    <section class="portfolio resume">
+    <section id="portfolio" class="portfolio resume">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center" data-aos="fade-up">
                 <div class="col-xl-9 resumetitle">
                     <h2 class="about__title">Портфолио</h2>
-                    <p class="about__text">Моё портфолио по верстке и коддингу</p>
+                    <p class="about__text">Мои последние работы</p>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -213,51 +232,51 @@
             </div>
             <div class="row filter aligh_img">
                 <div filter="wd" class="col-xl-4 col-md-6">
-                    <img src="img/item1.png" alt="">
+                    <img src="img/S&MItlers.png" alt="">
 
                     <div class="text">
-                        <h5>Hand Watch</h5>
-                        <p>Web design</p>
-                        <a href="#">Посмотреть на GitHub</a>
+                        <h5>Сайт салона красоты</h5>
+                        <p>Less+jquery плагины</p>
+                        <a href="https://github.com/VitaliiLunev83/S-Mitlers">Посмотреть на GitHub</a>
                     </div>
                 </div>
                 <div filter="wd" class="col-xl-4 col-md-6">
-                    <img src="img/item2.png" alt="">
+                    <img src="img/BootstrapBAM.png" alt="">
                     <div class="text">
-                        <h5>One Day Pass</h5>
-                        <p>Mockups</p>
-                        <a href="#">Посмотреть на GitHub</a>
+                        <h5>Верстка c Bootstrap</h5>
+                        <p>БЭМ+Bootsrap</p>
+                        <a href="https://github.com/VitaliiLunev83/BootsrapBam">Посмотреть на GitHub</a>
                     </div>
                 </div>
                 <div filter="wd" class="col-xl-4 col-md-6">
-                    <img src="img/item3.png" alt="">
+                    <img src="img/Mirilis.png" alt="">
                     <div class="text">
-                        <h5>Modal T-shirt</h5>
-                        <p>Web design</p>
+                        <h5>Многостраничный сайт</h5>
+                        <p>HTML+CSS</p>
+                        <a href="https://github.com/VitaliiLunev83/MirilisSite">Посмотреть на GitHub</a>
+                    </div>
+                </div>
+                <div filter="moc" class="col-xl-4 col-md-6">
+                    <img src="img/item1.png" alt="">
+                    <div class="text">
+                        <h5>Интернет магазин</h5>
+                        <p>JavaScript & Ajax</p>
+                        <a href="https://github.com/VitaliiLunev83/AliExpressBucket">Посмотреть на GitHub</a>
+                    </div>
+                </div>
+                <div filter="moc" class="col-xl-4 col-md-6">
+                    <img src="img/item5.png" alt="">
+                    <div class="text">
+                        <h5>Подсчет каллорий</h5>
+                        <p>React + MySql</p>
                         <a href="#">Посмотреть на GitHub</a>
                     </div>
                 </div>
                 <div filter="moc" class="col-xl-4 col-md-6">
                     <img src="img/item4.png" alt="">
                     <div class="text">
-                        <h5>Flask</h5>
-                        <p>Mockups</p>
-                        <a href="#">Посмотреть на GitHub</a>
-                    </div>
-                </div>
-                <div filter="moc" class="col-xl-4 col-md-6">
-                    <img src="img/item4.png" alt="">
-                    <div class="text">
-                        <h5>Flask</h5>
-                        <p>Mockups</p>
-                        <a href="#">Посмотреть на GitHub</a>
-                    </div>
-                </div>
-                <div filter="moc" class="col-xl-4 col-md-6">
-                    <img src="img/item4.png" alt="">
-                    <div class="text">
-                        <h5>Flask</h5>
-                        <p>Mockups</p>
+                        <h5>Приложения для сайтов</h5>
+                        <p>JavaScript</p>
                         <a href="#">Посмотреть на GitHub</a>
                     </div>
                 </div>
@@ -275,9 +294,63 @@
         </div>
     </section>
 
+    <section id="contacts" class="portfolio resume contacts">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up">
+                <div class="col-xl-9 resumetitle">
+                    <h2 class="about__title">Контакты</h2>
+                    <p class="about__text">Оставьте ваше сообщение</p>
+                </div>
+            </div>
+            <div class="row conacts">
+                <div class="col-xl-6 col-sm-6">
+                    <div class="contact_box">
+                        <div class="contacts_icon"> <i class="fas fa-street-view"></i></div>
+                        <h3>Адрес:</h3>
+                        <p>Станция метро: Технологический инситут<br>Улица Верейская, д.40</p>
+                    </div>
+                    <div class="contact_box">
+                        <div class="contacts_icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Телефон:</h3>
+                        <p>+7 911 031 16 59 <br>+7 963 315 02 82</p>
+                    </div>
+                    <div class="contact_box">
+                        <div class="contacts_icon"><i class="fas fa-id-card"></i></div>
+                        <h3>Веб-сайт:</h3>
+                        <p><a href="#">vitalli.luniev.ru</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                    <form action="http://formspree.io/vitalii.luniev@mail.ru" class="main_form" novalidate target="_blank" method="post">
+                        <label class="form-group">
+                                    <span class="color_element">*</span> Ваше имя:
+                                    <input type="text" name="name" placeholder="Ваше имя" data-validation-required-message="Вы не ввели имя" required />
+                                    <span class="help-block text-danger"></span>
+                                </label>
+                        <label class="form-group">
+                                    <span class="color_element">*</span> Ваш E-mail:
+                                    <input type="email" name="email" placeholder="Ваш E-mail" data-validation-required-message="Не корректно введен E-mail" required />
+                                    <span class="help-block text-danger"></span>
+                                </label>
+                        <label class="form-group">
+                                    <span class="color_element">*</span> Ваше сообщение:
+                                    <textarea name="message" placeholder="Ваше сообщение" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+                                    <span class="help-block text-danger"></span>
+                         </label>
+                        <button>Отправить</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        </div>
 
 
 
+    </section>
+    <footer class="rules ">
+        All rights Reserved © 2019
+    </footer>
 
 
 
@@ -294,7 +367,7 @@
     <script>
         AOS.init({
             offset: 400,
-            duration: 1000,
+            duration: 800,
         });
     </script>
     <!-- Animation End -->
