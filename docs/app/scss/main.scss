@@ -1,0 +1,68 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "_aboutme.scss";
+@import "_resume.scss";
+@import "_skills.scss";
+@import "_portfolio.scss";
+@import "_contacts.scss";
+::placeholder {
+    color: #666;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none !important;
+}
+
+body {
+    font-size: 16px;
+    min-width: 320px;
+    position: relative;
+    line-height: 1.65;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    color: $text;
+    input,
+    textarea {
+        border: #666 1px solid;
+        outline: none !important;
+        &:focus:required:invalid {
+            border-color: red;
+        }
+        &:required:valid {
+            border-color: green;
+        }
+    }
+}
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    &.img-width {
+        width: 100%;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+@import "media"; // Always at the end

@@ -11,15 +11,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
     notify = require('gulp-notify'),
-    rsync = require('gulp-rsync'),
-    ghPages = require('gulp-gh-pages');
-
-
-//gh-pages
-gulp.task('deploy', function() {
-    return gulp.src('./dist/**/*')
-        .pipe(ghPages());
-});
+    rsync = require('gulp-rsync');
 
 // Local Server
 gulp.task('browser-sync', function() {
